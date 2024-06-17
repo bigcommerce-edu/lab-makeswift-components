@@ -32,6 +32,7 @@ runtime.registerComponent(
               label: 'Image',
               format: Image.Format.URL,
             }),
+            content: Slot(),
           },
         }),
         getItemLabel(member) {
