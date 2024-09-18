@@ -7,6 +7,7 @@ interface Member {
   name?: string
   position?: string
   image?: string
+  content: ReactNode
 }
 
 interface Props {
@@ -120,7 +121,7 @@ export const TeamMembers = forwardRef((
                   "--fadeDuration": `${fadeInDuration}ms`,
                 } as CSSProperties}
               >
-                <h2 className="text-xl">{member.name}</h2>
+                {member.content}
               </div>
             )
           })}
