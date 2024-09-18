@@ -13,3 +13,14 @@ import {
   TextInput 
 } from '@makeswift/runtime/controls';
 import { runtime } from '~/lib/makeswift/runtime';
+
+runtime.registerComponent(
+  lazy(() => import('./team-members')),
+  {
+    type: 'team-members',
+    label: 'Team Members',
+    props: {
+
+    },
+  }
+);
